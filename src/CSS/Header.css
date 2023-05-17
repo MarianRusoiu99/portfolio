@@ -1,0 +1,8 @@
+.headerContainer{
+    display:flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+    margin: 0;
+}
+.headerContainer h1 {margin:0;}
