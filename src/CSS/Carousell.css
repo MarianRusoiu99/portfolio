@@ -1,0 +1,26 @@
+.carousellContainer{
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap;
+
+}
+.slide{
+    display: flex;
+    animation: 50s slideAnimation infinite linear;
+    
+}
+.slideElement{
+    padding: 20px;
+    font-size: 40px;
+    
+}
+
+@keyframes slideAnimation {
+    from {
+        transform:translateX(0);
+    }
+    to{
+        transform: translateX(-100%)
+    }
+    
+}

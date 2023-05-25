@@ -1,0 +1,32 @@
+{
+"1" : {
+
+    "title":"Title",
+    "content":"Csfsdsdf sadf sdf as sadf as sdf s fsda asd sdf sadf sadf s sd fdfasf asd asd fsd fsdf sd fsd sf sadfas dsadsdgsdagsd",
+    "image":"../Assets/a.png",
+    "imageAlt":"descriere",
+    "github":"https://www.npmjs.com/package/framer-motion"
+},
+"2" : {
+    "title":"Title",
+    "content":"Csfsdsdf sadf sdf as sadf as sdf s fsda asd sdf sadf sadf s sd fdfasf asd asd fsd fsdf sd fsd sf sadfas dsadsdgsdagsd",
+    "image":"../Assets/a.png",
+    "imageAlt":"descriere",
+    "github":"https://www.npmjs.com/package/framer-motion"
+},
+"3" : {
+
+    "title":"Title",
+    "content":"Csfsdsdf sadf sdf as sadf as sdf s fsda asd sdf sadf sadf s sd fdfasf asd asd fsd fsdf sd fsd sf sadfas dsadsdgsdagsd",
+    "image":"../Assets/a.png",
+    "imageAlt":"descriere",
+    "github":"https://www.npmjs.com/package/framer-motion"
+},
+"4" : {
+    "title":"Title",
+    "content":"Csfsdsdf sadf sdf as sadf as sdf s fsda asd sdf sadf sadf s sd fdfasf asd asd fsd fsdf sd fsd sf sadfas dsadsdgsdagsd",
+    "image":"../Assets/a.png",
+    "imageAlt":"descriere",
+    "github":"https://www.npmjs.com/package/framer-motion"}
+
+}
