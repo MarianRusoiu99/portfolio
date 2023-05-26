@@ -3,30 +3,33 @@
 
     "title":"Title",
     "content":"Csfsdsdf sadf sdf as sadf as sdf s fsda asd sdf sadf sadf s sd fdfasf asd asd fsd fsdf sd fsd sf sadfas dsadsdgsdagsd",
-    "image":"../Assets/a.png",
+    "image":"./Assets/media/PlaneVizualiser.png",
     "imageAlt":"descriere",
-    "github":"https://www.npmjs.com/package/framer-motion"
-},
+    "github":"https://www.npmjs.com/package/framer-motion",
+    "demo":"./Demo/PlaneViz/index.html"},
 "2" : {
     "title":"Title",
     "content":"Csfsdsdf sadf sdf as sadf as sdf s fsda asd sdf sadf sadf s sd fdfasf asd asd fsd fsdf sd fsd sf sadfas dsadsdgsdagsd",
-    "image":"../Assets/a.png",
+    "image":"./Assets/media/PlaneVizualiser.png",
     "imageAlt":"descriere",
-    "github":"https://www.npmjs.com/package/framer-motion"
+    "github":"https://www.npmjs.com/package/framer-motion",
+    "demo":"./Demo/PlaneViz/index.html"
 },
 "3" : {
-
     "title":"Title",
     "content":"Csfsdsdf sadf sdf as sadf as sdf s fsda asd sdf sadf sadf s sd fdfasf asd asd fsd fsdf sd fsd sf sadfas dsadsdgsdagsd",
-    "image":"../Assets/a.png",
+    "image":"./Assets/media/PlaneVizualiser.png",
     "imageAlt":"descriere",
-    "github":"https://www.npmjs.com/package/framer-motion"
+    "github":"https://www.npmjs.com/package/framer-motion",
+    "demo":"./Demo/PlaneViz/index.html"
 },
 "4" : {
     "title":"Title",
     "content":"Csfsdsdf sadf sdf as sadf as sdf s fsda asd sdf sadf sadf s sd fdfasf asd asd fsd fsdf sd fsd sf sadfas dsadsdgsdagsd",
-    "image":"../Assets/a.png",
+    "image":"./Assets/media/PlaneVizualiser.png",
     "imageAlt":"descriere",
-    "github":"https://www.npmjs.com/package/framer-motion"}
+    "github":"https://www.npmjs.com/package/framer-motion",
+    "demo":"./Demo/PlaneViz/index.html"
 
+}
 }

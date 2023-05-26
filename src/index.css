@@ -5,17 +5,23 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
+  color: var(--white);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+a{
+  text-decoration: none;
+  color: var(--dominant);
+}
 
 :root {
   /* --dominant: #1e90ff; */
-  --white: #ffffff;
-  --background: #003F5C;
+  --white: #e6e6e6;
+  --background: #1a1a1a;
   --accents: #472B62;
-  --dominant: #FB5B5A;
+  --dominant: #f82e2e;
 }

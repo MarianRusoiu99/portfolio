@@ -6,19 +6,19 @@ function Carousell(props) {
     <div className="carousellContainer">
         <div className='slide'>
             {
-                props.args.map(element => {
+                props.args.map((element,key) => {
                     
-                    return(<p className='slideElement'> {element}</p>)
+                    return(<p className='slideElement' key={key}> {element}</p>)
                 })
             }
             {
-               props.args.map(element => {      
-                   return(<p className='slideElement'> {element}</p>)
+               props.args.map((element,key)=> {      
+                   return(<p className='slideElement'key={key}> {element}</p>)
                })
            }
             {
-               props.args.map(element => {      
-                   return(<p className='slideElement'> {element}</p>)
+               props.args.map((element,key)=> {      
+                   return(<p className='slideElement'key={key}> {element}</p>)
                })
            }
         </div>
