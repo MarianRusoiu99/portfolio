@@ -7,7 +7,7 @@ function Element(props) {
         <div className='worksElement' key={props.key} onMouseEnter={() => setIsShown(true)}  onMouseLeave={() => setIsShown(false)}>
         <div className="row1">
         <h3 className="title">{props.title}</h3>
-        <div className='links'> <a href={props.demo}>DEMO</a> <a href={props.github}>GITHUB</a></div>
+        <div className='links'> <a href={props.demo}>DEMO</a><br/> <a href={props.github}>GITHUB</a></div>
         </div>
         {isShown && 
         (<div className="row2">

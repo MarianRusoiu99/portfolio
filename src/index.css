@@ -25,3 +25,25 @@ a{
   --accents: #472B62;
   --dominant: #f82e2e;
 }
+
+
+
+.curtains-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* basic plane */
+
+.SimplePlane {
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.SimplePlane img {
+  display: none;
+}

@@ -13,7 +13,7 @@ import Main from './Components/Main';
 import NotFound from './Components/NotFound';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-  
+import SimplePlane from './Components/SimplePlane';  
 
 function App() {
 
@@ -29,6 +29,7 @@ function App() {
           <Route path="*" element={<NotFound/>} />
       </Routes>
       <Footer/>
+      <SimplePlane />
     </BrowserRouter>
 
 
