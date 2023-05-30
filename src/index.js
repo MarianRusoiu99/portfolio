@@ -2,15 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { Curtains } from "react-curtains";
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
-     <Curtains pixelRatio={Math.min(1.5, window.devicePixelRatio)}>
+    
     <App />
-    </Curtains>
+  
   // </React.StrictMode>
 );
 

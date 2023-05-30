@@ -5,7 +5,7 @@ import { vertexShader, fragmentShader } from "./shaders";
 
 // import "./index.css";
 
-function SimplePlane() {
+function SimplePlane(source) {
   const [plane, setPlane] = useState(null);
 
   const mousePosition = useRef(new Vec2());
@@ -21,7 +21,7 @@ function SimplePlane() {
       // resolution of our plane
       name: "uResolution",
       type: "2f", // notice this is an length 2 array of floats
-      value: [0, 0]
+      value: [0, 1]
     },
     time: {
       // time uniform that will be updated at each draw call
@@ -39,7 +39,7 @@ function SimplePlane() {
       // the mouse move strength
       name: "uMouseMoveStrength",
       type: "1f",
-      value: 5
+      value: 0.1
     }
   };
 
@@ -136,6 +136,7 @@ function SimplePlane() {
   };
  
   return (
+    
     <Plane
       className="SimplePlane"
       // plane init parameters
@@ -150,7 +151,7 @@ function SimplePlane() {
       onAfterResize={onAfterResize}
     >
       <img
-        src="https://images.unsplash.com/photo-1685276151314-7fe5f99650ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+        src="./Assets/b.png"
         data-sampler="simplePlaneTexture"
         alt=""
       />
