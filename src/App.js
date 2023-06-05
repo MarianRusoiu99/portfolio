@@ -3,6 +3,7 @@ import './App.css';
 import "./CSS/Header.css"
 import "./CSS/Main.css"
 import "./CSS/Page.css"
+import AnimatedCursor from "react-animated-cursor"
 
 import {
   BrowserRouter,
@@ -21,6 +22,23 @@ function App() {
 
   return (
     <div className="App">
+       <AnimatedCursor 
+      color="230, 230, 230"  
+    innerSize={25}
+    outerSize={35}
+    innerScale={2}
+    outerScale={2.7}
+    outerAlpha={1}
+    innerStyle={
+      {
+        mixBlendMode: 'difference'
+      }
+    }
+    outerStyle={{
+      mixBlendMode: 'difference'
+    
+    }}
+       />
       <BrowserRouter>
       <Header/>
       <Routes>

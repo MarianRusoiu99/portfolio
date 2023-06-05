@@ -1,22 +1,44 @@
 import React from 'react'
 
+import {motion , useAnimation, AnimatePresence} from 'framer-motion'
+ import {animations} from "./json/animations.js"
+import { nanoid } from 'nanoid';
 function Element(props) {
-    const [isShown, setIsShown] = React.useState(false);
+  const [isShown, setIsShown] = React.useState(false);
+
+
+
+
   return (
     <div>
-        <div className='worksElement' key={props.key} onMouseEnter={() => setIsShown(true)}  onMouseLeave={() => setIsShown(false)}>
-        <div className="row1">
-        <h3 className="title">{props.title}</h3>
-        <div className='links'> <a href={props.demo}>DEMO</a><br/> <a href={props.github}>GITHUB</a></div>
-        </div>
-        {isShown && 
-        (<div className="row2">
-        <div className='descriere'>{props.descriere}</div>
-        <img className="image" src={props.image} alt={props.alt}/>
-        </div>
-        )}
+      
+      <motion.div 
+     variants={animations.containerVariants}
+     initial="hidden"
+     animate="visible"
+     exit="exit"
+      onTap={() => {setIsShown((prev)=>!prev)}} 
+      className='worksElement' key={props.key} >
         
-                            </div></div>
+        <div className="row1">
+          <h3 className="title">{props.title}</h3>
+          <div className='links'> <a href={props.demo}>DEMO</a><a href={props.github}>GITHUB</a></div>
+        </div>
+        <AnimatePresence>
+        {isShown &&
+          (<motion.div 
+            key={nanoid()}
+            variants={animations.elementVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+          className="row2">
+            <div className='descriere'>{props.descriere}</div>
+            <img className="image" src={props.image} alt={props.alt} />
+          </motion.div>
+          )}
+        </AnimatePresence>
+      </motion.div></div>
   )
 }
 

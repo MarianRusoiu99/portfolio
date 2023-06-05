@@ -49,7 +49,34 @@ export const animations = {
             ease: "easeInOut",
           }
         }
+      },
+      
+ elementVariants: {
+    hidden:{
+      opacity:0,
+      y:-50
+    },
+    visible:{
+      opacity:1,
+      y:0,
+
+      transition:{
+        type: 'spring',
+        delay:0.1,
+        duration: 0.5,
+      
       }
+    },
+    exit:{
+      opacity:0,
+      y:50,
+      delay:0.1,
+      duration: 0.5,
+      transition:{
+        ease: 'easeInOut'
+      }
+    }
+  },
 
 
 

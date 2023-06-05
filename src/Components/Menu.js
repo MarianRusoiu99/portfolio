@@ -11,14 +11,14 @@ function Menu() {
 const path02Controls = useAnimation();
 
 const path01Variants = {
-    open: { d: 'M3.06061 2.99999L21.0606 21', stroke:'#1a1a1a'  },
-    closed: { d: 'M0 9.5L24 9.5' , stroke:'#e6e6e6'  },
+    open: { d: 'M3.06061 3.99999L44.0606 31', stroke:'#1a1a1a'  },
+    closed: { d: 'M0 9.5L40 9.5' , stroke:'#e6e6e6'  },
    }
 
    const path02Variants = {
-    open: { d: 'M3.00006 21.0607L21 3.06064',stroke:'#1a1a1a'  },
-    moving: { d: 'M0 14.5L24 14.5',stroke:'#1a1a1a'  },
-    closed: { d: 'M0 16.5L15 16.5', stroke:'#e6e6e6'},
+    open: { d: 'M3.00006 31.0607L44 3.06064',stroke:'#1a1a1a'  },
+    moving: { d: 'M0 24.5L24 24.5',stroke:'#1a1a1a'  },
+    closed: { d: 'M0 25.5L24 25.5', stroke:'#e6e6e6'},
    }
 
 const onClick = async () => {
