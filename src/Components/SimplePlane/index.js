@@ -10,7 +10,7 @@ function SimplePlane(source) {
 
   const mousePosition = useRef(new Vec2());
   const mouseLastPosition = useRef(new Vec2());
-  console.log("it reads")
+
   const deltas = useRef({
     max: 0,
     applied: 0

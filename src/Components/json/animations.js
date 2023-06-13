@@ -2,21 +2,30 @@ export const animations = {
 
  containerVariants: {
     hidden:{
+      y:"-100%",
       opacity:0,
       
     },
     visible:{
+      y:0,
       opacity:1,
       
       transition:{
-        type: 'spring',
-        delay: 0.1
+        duration:0.3,
+        type: 'tween',
+        ease: 'easeInOut',
+        stiffness: 200,
+        staggerChildren: 0.5
+        
       }
     },
     exit:{
+      y:"-100%",
       opacity:0,
+      
       transition:{
-        ease: 'easeInOut'
+        ease: 'easeInOut',
+        stiffness: 100,
       }
     }
   },
@@ -54,26 +63,31 @@ export const animations = {
  elementVariants: {
     hidden:{
       opacity:0,
-      y:-50
+      height:0
     },
     visible:{
+      height:"auto",
       opacity:1,
-      y:0,
-
       transition:{
         type: 'spring',
         delay:0.1,
-        duration: 0.5,
+        duration: 0.4,
+        opacity: {
+          delay: 0.2 // custom duration for opacity property only
+        }
       
       }
     },
     exit:{
       opacity:0,
-      y:50,
+      height:0,
       delay:0.1,
-      duration: 0.5,
+      duration: 0.4,
       transition:{
-        ease: 'easeInOut'
+        ease: 'easeInOut',
+        height: {
+          delay: 0.2 // custom duration for opacity property only
+        }
       }
     }
   },

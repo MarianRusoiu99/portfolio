@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import Footer from './Footer';
-import {motion , useAnimation} from 'framer-motion'
+import {motion , useAnimation,AnimatePresence } from 'framer-motion'
 import {animations} from "./json/animations.js"
 
 function Menu() {
@@ -70,18 +70,22 @@ const onClick = async () => {
   </svg>
         
          </div>
+         <AnimatePresence>
         {
             menuState && 
+            
             <motion.div 
             variants={animations.containerVariants}
             initial="hidden"
             animate="visible"
+            exit="exit"
             className='menuOverlay'>
                 <Footer/>
             </motion.div>
             
             
         }
+        </AnimatePresence>
         </div>
   )
 }

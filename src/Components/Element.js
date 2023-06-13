@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {motion , useAnimation, AnimatePresence} from 'framer-motion'
+import {motion , AnimatePresence} from 'framer-motion'
  import {animations} from "./json/animations.js"
 import { nanoid } from 'nanoid';
 function Element(props) {
@@ -10,14 +10,11 @@ function Element(props) {
 
 
   return (
-    <div>
+    <motion.div onTap={() => {setIsShown((prev)=>!prev)}} >
       
       <motion.div 
-     variants={animations.containerVariants}
-     initial="hidden"
-     animate="visible"
-     exit="exit"
-      onTap={() => {setIsShown((prev)=>!prev)}} 
+     
+       
       className='worksElement' key={props.key} >
         
         <div className="row1">
@@ -25,20 +22,20 @@ function Element(props) {
           <div className='links'> <a href={props.demo}>DEMO</a><a href={props.github}>GITHUB</a></div>
         </div>
         <AnimatePresence>
-        {isShown &&
-          (<motion.div 
+        
+          <motion.div 
             key={nanoid()}
             variants={animations.elementVariants}
-            initial="hidden"
-            animate="visible"
+             initial="hidden"
+            animate={isShown ? "visible": "hidden"}
             exit="exit"
           className="row2">
             <div className='descriere'>{props.descriere}</div>
             <img className="image" src={props.image} alt={props.alt} />
           </motion.div>
-          )}
+        
         </AnimatePresence>
-      </motion.div></div>
+      </motion.div></motion.div>
   )
 }
 
