@@ -2,6 +2,8 @@
     overflow: hidden;
     padding: 60px 0;
     white-space: nowrap;
+    /* position: absolute; */
+    margin-top: -250px;
 
 }
 .slide{

@@ -14,11 +14,13 @@ function Main() {
     <div> 
       <Curtains pixelRatio={Math.min(1.5, window.devicePixelRatio)}>
     <SimplePlane source={image}/> 
+    <Carousell key={nanoid()} args={['React','Three.js' ,'react-three-fiber','drei', 'react-router' , "Worddpress", "Webflow","Photoshop","" ]}/>
     </Curtains>
     {/* <Hero/> */}
-    <Carousell key={nanoid()} args={['React','Three.js' ,'react-three-fiber','drei', 'react-router' , "Worddpress", "Webflow","Photoshop","" ]}/>
-    <About/>
+    {/* <Carousell key={nanoid()} args={['React','Three.js' ,'react-three-fiber','drei', 'react-router' , "Worddpress", "Webflow","Photoshop","" ]}/> */}
     <Work/>
+    <About/>
+   
    
    
 
