@@ -19,7 +19,7 @@ function Element(props) {
         
         <div className="row1">
           <h3 className="title">{props.title}</h3>
-          <div className='links'> <a href={props.demo}>DEMO</a><a href={props.github}>GITHUB</a></div>
+          <div className='links'> <a href={props.demo} target="_blank" rel="noreferrer">DEMO</a><a href={props.github} target="_blank" rel="noreferrer">GITHUB</a></div>
         </div>
         <AnimatePresence>
         

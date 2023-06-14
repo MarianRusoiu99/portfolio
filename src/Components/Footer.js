@@ -13,8 +13,8 @@ function Footer() {
       <a href="https://bepuro.com/"> inspiration for this website</a>
       </div>
       <div className='footerLinkContainer'>
-        <h2 className='linkItem'>Linkedin</h2>
-        <h2 className='linkItem'>Linkedin</h2>
+      <a href='https://github.com/MarianRusoiu99' target="_blank" rel="noreferrer"><h2 className='linkItem'>GitHub</h2></a>
+      <a href='https://www.linkedin.com/in/valentin-rusoiu-153920197/' target="_blank" rel="noreferrer"><h2 className='linkItem'>Linkedin</h2></a>
         <h2 className='linkItem'>Linkedin</h2>
         <h2 className='linkItem'>Linkedin</h2>
         <h2 className='linkItem'>Linkedin</h2>
