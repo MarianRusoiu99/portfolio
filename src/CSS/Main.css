@@ -107,3 +107,11 @@
 
 
 }
+@media only screen and (max-width: 600px) {
+  .row1{
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+  }
+
+}

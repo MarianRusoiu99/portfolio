@@ -1,10 +1,10 @@
 {
 "1" : {
 
-    "title":"Title",
-    "content":"Csfsdsdf sadf sdf as sadf as sdf s fsda asd sdf sadf sadf s sd fdfasf asd asd fsd fsdf sd fsd sf sadfas dsadsdgsdagsd",
-    "image":"./Assets/media/PlaneVizualiser.png",
-    "imageAlt":"descriere",
+    "title":"Andreea Cojocaru Portfolio",
+    "content":"This is a portfolio website I made in React for Andreea Cojocaru, freelance product designer",
+    "image":"./Assets/media/andreeaPortfolio.png",
+    "imageAlt":"Andreea Cojocaru Product Designer Portfolio",
     "github":"https://www.npmjs.com/package/framer-motion",
     "demo":"http://andreeaportfolio.valentinrusoiu.xyz"},
 "2" : {
