@@ -91,10 +91,50 @@ export const animations = {
       }
     }
   },
+  footerContainer: {
+    hidden:{
+      opacity:0,
+     
+    },
+    visible:{
 
+      opacity:1,
+      transition:{
+        type: 'tween',
+        duration: 0.9,
+        staggerChildren:1.0,
+        delayChildren: 1.0,
+      
+      }
+    },
+    exit:{
+      opacity:0,
+      delay:0.1,
+      duration: 0.9,
+      transition:{
+        ease: 'easeInOut',
+      }
+    }
+  },
+  footerChildrenContainer: {
+    hidden:{
+      opacity:0,
+     
+    },
+    visible:{
 
-
-
+      opacity:1,
+      transition:{
+        type: 'tween',
+      
+      }
+    },
+    exit:{
+      opacity:0,
+      delay:0.1,
+      duration: 0.9,
+    }
+  },
 
 
 

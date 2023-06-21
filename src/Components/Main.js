@@ -9,6 +9,7 @@ import SimplePlane from './SimplePlane'
 import image from "./SimplePlane/b.webp"
 import { Curtains } from "react-curtains";
 
+
 function Main() {
   return (
     <div> 
@@ -16,6 +17,7 @@ function Main() {
     <SimplePlane source={image}/> 
     <Carousell key={nanoid()} args={['React','Three.js' ,'react-three-fiber','drei', 'react-router' , "Worddpress", "Webflow","Photoshop","" ]}/>
     </Curtains>
+   
     {/* <Hero/> */}
     {/* <Carousell key={nanoid()} args={['React','Three.js' ,'react-three-fiber','drei', 'react-router' , "Worddpress", "Webflow","Photoshop","" ]}/> */}
     <Work/>

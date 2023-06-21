@@ -1,28 +1,67 @@
 import React from 'react'
-
+import { motion,AnimatePresence,useInView,stagger } from 'framer-motion'
+import {animations} from "./json/animations.js"
 function Footer() {
+  const container = React.useRef(null)
+  const ref = React.useRef(null)
+ 
+  const isInView = useInView(container, { once: false })
+
+
   return (
-    <div className='footerContainer'>
-      <div className='footerContacts'>
+    <AnimatePresence>
+    <motion.div 
+    variants={animations.footerContainer}
+    initial="hidden"
+   animate={isInView ? "visible" : "hidden"}
+   exit="exit"
+    ref={container}
+    className='footerContainer'>
+      <motion.div 
+        variants={animations.footerChildrenContainer}
+        initial="hidden"
+       animate={isInView ? "visible" : "hidden"}
+       exit="exit"
+      
+      className='footerContacts'>
 
       <h2>valentin.rusoiu@gmail.com</h2>
       <h2>+40 773356485</h2>  
-      </div>
-      <div className='footerCreator'>
+      </motion.div>
+      <motion.div
+        variants={animations.footerChildrenContainer}
+        initial="hidden"
+       animate={isInView ? "visible" : "hidden"}
+       exit="exit"
+      
+      
+      className='footerCreator'>
       <p>@ValentinRusoiu 2023</p>
       <a href="https://bepuro.com/"> inspiration for this website</a>
-      </div>
-      <div className='footerLinkContainer'>
+      </motion.div>
+      <motion.div
+        variants={animations.footerChildrenContainer}
+        initial="hidden"
+       animate={isInView ? "visible" : "hidden"}
+       exit="exit"
+      
+      className='footerLinkContainer'>
       <a href='https://github.com/MarianRusoiu99' target="_blank" rel="noreferrer"><h2 className='linkItem'>GitHub</h2></a>
       <a href='https://www.linkedin.com/in/valentin-rusoiu-153920197/' target="_blank" rel="noreferrer"><h2 className='linkItem'>Linkedin</h2></a>
-        <h2 className='linkItem'>Linkedin</h2>
-        <h2 className='linkItem'>Linkedin</h2>
-        <h2 className='linkItem'>Linkedin</h2>
-      </div>
-     <div className='footerLetsTalk'>
+      <a href = "https://www.instagram.com/valentinrusoiu/" target="_blank" rel="noreferrer"> <h2 className='linkItem'>Instagram</h2></a> 
+      </motion.div>
+     <motion.div className='footerLetsTalk'
+       variants={animations.footerChildrenContainer}
+       initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+      exit="exit"
+     
+     
+     >
       LET'S TALK
-     </div>
-      </div>
+     </motion.div>
+      </motion.div>
+      </AnimatePresence>
   )
 }
 

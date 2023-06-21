@@ -3,33 +3,33 @@
 
     "title":"Andreea Cojocaru Portfolio",
     "content":"This is a portfolio website I made in React for Andreea Cojocaru, freelance product designer",
-    "image":"./Assets/media/andreeaPortfolio.png",
+    "image":"./Assets/media/andreeaPortofolio.png",
     "imageAlt":"Andreea Cojocaru Product Designer Portfolio",
-    "github":"https://www.npmjs.com/package/framer-motion",
+    "github":"https://github.com/MarianRusoiu99/andreea",
     "demo":"http://andreeaportfolio.valentinrusoiu.xyz"},
 "2" : {
-    "title":"Title",
-    "content":"Csfsdsdf sadf sdf as sadf as sdf s fsda asd sdf sadf sadf s sd fdfasf asd asd fsd fsdf sd fsd sf sadfas dsadsdgsdagsd",
+    "title":"Plane Music Visualiser",
+    "content":"This is a music visualiser I built while learning three fiber js. Just upload a mp3 with a song that you like.",
     "image":"./Assets/media/PlaneVizualiser.png",
-    "imageAlt":"descriere",
-    "github":"https://www.npmjs.com/package/framer-motion",
-    "demo":"./Demo/PlaneViz/index.html"
+    "imageAlt":"Plane Music Visualiser Rusoiu Valentin",
+    "github":"https://github.com/MarianRusoiu99/r3faudio",
+    "demo":"http://musicvisualizerplane.valentinrusoiu.xyz"
 },
 "3" : {
-    "title":"Title",
+    "title":"Weather around the globe",
     "content":"Csfsdsdf sadf sdf as sadf as sdf s fsda asd sdf sadf sadf s sd fdfasf asd asd fsd fsdf sd fsd sf sadfas dsadsdgsdagsd",
     "image":"./Assets/media/PlaneVizualiser.png",
     "imageAlt":"descriere",
-    "github":"https://www.npmjs.com/package/framer-motion",
-    "demo":"./Demo/PlaneViz/index.html"
+    "github":"https://github.com/MarianRusoiu99/weather-map",
+    "demo":"http://weatherglobe.valentinrusoiu.xyz"
 },
 "4" : {
-    "title":"Title",
-    "content":"Csfsdsdf sadf sdf as sadf as sdf s fsda asd sdf sadf sadf s sd fdfasf asd asd fsd fsdf sd fsd sf sadfas dsadsdgsdagsd",
+    "title":"Curl Noise Music Visualizer",
+    "content":"sdfsd",
     "image":"./Assets/media/PlaneVizualiser.png",
     "imageAlt":"descriere",
-    "github":"https://www.npmjs.com/package/framer-motion",
-    "demo":"./Demo/PlaneViz/index.html"
+    "github":"https://github.com/MarianRusoiu99/curl_noise",
+    "demo":"http://curlnoisemusicvisualizer.valentinrusoiu.xyz"
 
 }
 }
