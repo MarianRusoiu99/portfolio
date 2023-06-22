@@ -103,7 +103,9 @@ color: var(--background);
     margin-left: 80px;
   }
   .footerLetsTalk {
-    font-size: 15.5vw;
+   
+    font-size: 29vw;
+    text-align: center;
   }
 
   .footerContacts {
