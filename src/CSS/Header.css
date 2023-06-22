@@ -10,6 +10,12 @@
 }
 .headerContainer h1 {
   margin: 0;
+  font-family: 'Kelly Slab', cursive;
+  letter-spacing: 4px;
+  font-kerning: auto;
+  font-weight: 700;
+  font-size: 3rem; 
+  padding-right: 55px;
 }
 
 .menuHamburger {
@@ -22,7 +28,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-top: 25px;
   
 }
 .name{
@@ -57,10 +63,12 @@ color: var(--background);
 }
 
 .footerLetsTalk {
+  font-family: 'Kelly Slab', cursive;
   grid-area: lt;
-  font-size: 20.5vw;
+  font-size: 19.5vw;
   justify-self: center;
   align-self: end;
+  font-weight:700;
 }
 
 .footerContainer {
@@ -79,6 +87,7 @@ color: var(--background);
 }
 
 @media only screen and (max-width: 600px) {
+
   .menuHamburger{
     margin-right: -25px;
   }

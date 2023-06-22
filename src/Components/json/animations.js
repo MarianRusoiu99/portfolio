@@ -100,40 +100,35 @@ export const animations = {
 
       opacity:1,
       transition:{
-        type: 'tween',
-        duration: 0.9,
-        staggerChildren:1.0,
-        delayChildren: 1.0,
+        type: 'spring',
+        duration:0.5,
+        staggerChildren:0.3,
+        staggerDirection: -1
       
       }
     },
     exit:{
       opacity:0,
-      delay:0.1,
-      duration: 0.9,
-      transition:{
-        ease: 'easeInOut',
-      }
+      duration: 0.1,
+      
     }
   },
   footerChildrenContainer: {
     hidden:{
       opacity:0,
+      y:100,
      
     },
     visible:{
-
+      y:0,
       opacity:1,
       transition:{
         type: 'tween',
-      
+        duration:0.5,
       }
+      
     },
-    exit:{
-      opacity:0,
-      delay:0.1,
-      duration: 0.9,
-    }
+    
   },
 
 

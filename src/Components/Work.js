@@ -9,8 +9,9 @@ const w = works
 // console.log(w[1].title)
 
   return (
-<div className="center">
+
     <div className='worksContainer'>
+        <h2 className='sectionText'>Projects</h2>
         {
             Object.keys(w).map((element,key)=> {
                 console.log(w[`${element}`].image)
@@ -19,8 +20,6 @@ const w = works
                 )
             })
         }
-    </div>
-  
     </div>
     )
 }

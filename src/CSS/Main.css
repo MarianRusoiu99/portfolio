@@ -12,12 +12,14 @@
 .aboutContainer {
   width: 100%;
 
+  
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+justify-content: center;
   height: 100vh;
 }
 .aboutText {
+  margin:50px;
   max-width: 900px;
   font-size: 20px;
 }
@@ -33,13 +35,12 @@
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box; /* Firefox, other Gecko */
   box-sizing: border-box; /* Opera/IE 8+ */
-  padding: 5px;
   width: 100%;
   display: flex;
 
   justify-content: center;
   flex-direction: column;
-  max-width: 1000px;
+  
 }
 
 .worksElement {
@@ -86,6 +87,14 @@
   height:200px;
   aspect-ratio: auto;
 }
+.sectionText{
+  padding: 10px;
+ margin-left: 100px;
+ font-family: 'Kelly Slab', cursive;
+ letter-spacing: 6px;
+ font-size:2rem;
+}
+
 
 @media only screen and (max-width: 900px) {
   .row2 {
@@ -115,3 +124,4 @@
   }
 
 }
+
