@@ -2,6 +2,9 @@ import React from 'react'
 import works from "./json/work.json"
 import Element from './Element'
 import { nanoid } from 'nanoid'
+import { motion } from 'framer-motion'
+import { animations } from './json/animations'
+
 function Work() {
 
 // console.log(works[1].title)
@@ -10,7 +13,11 @@ const w = works
 
   return (
 
-    <div className='worksContainer'>
+    <motion.div
+    variants={animations.projectsContainer}
+    initial="hidden"
+    animate="visible"
+    className='worksContainer'>
         <h2 className='sectionText'>Projects</h2>
         {
             Object.keys(w).map((element,key)=> {
@@ -20,7 +27,7 @@ const w = works
                 )
             })
         }
-    </div>
+    </motion.div>
     )
 }
 

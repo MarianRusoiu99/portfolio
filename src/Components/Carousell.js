@@ -1,9 +1,17 @@
 import React from 'react'
 import "../CSS/Carousell.css"
+import { motion } from 'framer-motion'
+import { animations } from './json/animations'
+
 function Carousell(props) {
 //   console.log(props.args)
     return (
-    <div className="carousellContainer">
+    <motion.div 
+    variants={animations.carouselName}
+    initial="hidden"
+    animate="visible"
+    
+    className="carousellContainer">
         <div className='slide'>
             {
                 props.args.map((element,key) => {
@@ -22,7 +30,7 @@ function Carousell(props) {
                })
            }
         </div>
-    </div>
+    </motion.div>
   )
 }
 

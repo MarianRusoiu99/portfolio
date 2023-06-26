@@ -2,9 +2,8 @@ import React from 'react'
 import { motion, AnimatePresence, useInView, stagger } from 'framer-motion'
 import { animations } from "./json/animations.js"
 function Footer() {
+  
   const container = React.useRef(null)
-  const ref = React.useRef(null)
-
   const isInView = useInView(container, { once: false })
 
 
