@@ -222,6 +222,7 @@ export const animations = {
       transition: {
         type: 'spring',
         duration: 1.0,
+        
       }
 
     },
@@ -240,7 +241,7 @@ export const animations = {
       transition: {
         type: 'spring',
         duration: 1.5,
-        staggerChildren: 0.3,
+        staggerChildren: 1.4,
         staggerDirection: 1,
       },
 
