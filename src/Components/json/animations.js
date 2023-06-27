@@ -139,7 +139,7 @@ export const animations = {
   headerName: {
     hidden: {
       opacity: 0,
-      y: 100,
+      y: -100,
 
 
     },
@@ -148,7 +148,7 @@ export const animations = {
       opacity: 1,
       transition: {
         type: 'spring',
-        delay: 0.1,
+        delay: 0.5,
         duration: 1.5,
       }
 
@@ -176,24 +176,76 @@ export const animations = {
   projectsContainer: {
     hidden: {
       opacity: 0,
-      y: 200,
+      
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        type: 'spring',
+        duration: 1,
+        staggerChildren: 0.1,
+        staggerDirection: -1
+      },
 
+    },
+  },
+  projectChildrenContainer: {
+    hidden: {
+      opacity: 0,
+      y: -10,
 
     },
     visible: {
       y: 0,
       opacity: 1,
       transition: {
+        type: 'tween',
+        duration: 0.2,
+      }
+
+    },
+
+  },
+  aboutChildrenContainer: {
+    hidden: {
+      y:10,
+      // fontSize: "12px",
+      color:"rgb(230, 230, 230)",
+      // textDecoration:"none",
+
+    },
+    visible: {
+      y:0,
+      // fontSize: "25px",
+      // textDecoration:"underline",
+      color: "rgb(248, 46, 46)",
+      transition: {
+        type: 'spring',
+        duration: 1.0,
+      }
+
+    },
+
+  },
+  aboutContainer: {
+    hidden: {
+      opacity: 0,
+      
+
+      
+    },
+    visible: {
+      
+      opacity: 1,
+      transition: {
         type: 'spring',
         duration: 1.5,
         staggerChildren: 0.3,
-        staggerDirection: -1
+        staggerDirection: 1,
       },
 
     },
   },
-
-
 
 
 }

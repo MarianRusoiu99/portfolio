@@ -8,7 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background);
   color: var(--white);
-   
+  overflow-x: hidden !important;
 }
 
 code {
@@ -67,4 +67,8 @@ a{
 ::-webkit-scrollbar-thumb{
   background-color: #e6e6e6;
   color: #e6e6e6;
+}
+
+.App{
+  overflow: hidden;
 }

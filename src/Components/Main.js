@@ -15,12 +15,21 @@ import { animations } from './json/animations'
 function Main() {
   return (
     <div> 
+      <motion.div className="overL" initial={{opacity:1}} animate={{opacity:0}} transition={{
+      duration: 2,
+      delay:0.5
+        }}>
+</motion.div>  
       <Curtains pixelRatio={Math.min(1.5, window.devicePixelRatio)}>
-    <SimplePlane source={image}/> 
+
+  
+        <SimplePlane source={image}/>
+
+ 
     <Available/>
     <Carousell key={nanoid()} args={['React','Three.js' ,'react-three-fiber','drei', 'react-router' , "Worddpress", "Webflow","Photoshop","" ]}/>
     </Curtains>
-   
+ 
     {/* <Hero/> */}
     {/* <Carousell key={nanoid()} args={['React','Three.js' ,'react-three-fiber','drei', 'react-router' , "Worddpress", "Webflow","Photoshop","" ]}/> */}
     <Work/>
