@@ -47,7 +47,13 @@ const onClick = async () => {
     
     // },[menuState]);
   return (
-    <div>
+    <motion.div initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{
+      duration: 1,
+      delay: 0.9,
+      type: "spring"
+    }} >
        <div className='menuHamburger' onClick={onClick}> 
       
        <svg width='94' height='94' viewBox='0 0 94 94'>
@@ -86,7 +92,7 @@ const onClick = async () => {
             
         }
         </AnimatePresence>
-        </div>
+        </motion.div>
   )
 }
 

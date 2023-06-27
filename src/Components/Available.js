@@ -15,12 +15,12 @@ function Available() {
   // },[])
 
   return (
-    <div
+    <motion.div
       initial={{ scale: 0 }}
       animate={{ scale: 1 }}
       transition={{
         duration: 1,
-        delay: 1,
+        delay: 1.5,
         type: "spring"
       }}
       className='circle'>
@@ -46,7 +46,7 @@ function Available() {
 
       } </p>
 
-    </div>
+    </motion.div>
   )
 }
 
