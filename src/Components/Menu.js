@@ -60,7 +60,7 @@ function Menu() {
       }} >
       <div className='menuHamburger' onClick={onClick}>
 
-        <svg width='94' height='94' viewBox='0 0 94 94'>
+        <svg width='54' height='54' viewBox='0 0 54 54'>
           <motion.path
             {...path01Variants.closed}
             animate={path01Controls}

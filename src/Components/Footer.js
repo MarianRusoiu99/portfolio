@@ -2,6 +2,8 @@ import React from 'react'
 import { motion, AnimatePresence, useInView, stagger } from 'framer-motion'
 import { animations } from "./json/animations.js"
 import { useStore } from './store.js'
+import Carousell from './Carousell.js'
+import { nanoid } from 'nanoid'
 
 
 function Footer() {
@@ -16,38 +18,49 @@ function Footer() {
 
   const [project , setProject] = React.useState()
   const [about , setAbout] = React.useState()
+  const [home , setHome] = React.useState()
 
   
   React.useEffect(()=>{
     setProject( document.querySelector('.worksContainer') )
     setAbout( document.querySelector('.aboutContainer') )
+    setHome( document.querySelector('.headerContainer') )
     console.log(project);
 
     
   },[])
   // console.log(project);
-  const proj= () => {
+  const projectClickHandler= () => {
     if(menuState){
       setMenuState(menuState)
     }
     project.scrollIntoView()
    }
 
-   const abo= () => {
+   const aboutClickHandler= () => {
     if(menuState){
       setMenuState(menuState)
     }
     about.scrollIntoView()
    }
 
+   const homeClickHandler= () => {
+    if(menuState){
+      setMenuState(menuState)
+    }
+    home.scrollIntoView()
+   }
+
+
 
   return (
 
     <motion.div  variants={animations.footerContainer} initial="hidden" animate={isInView ? "visible" : "hidden"} exit="exit" ref={container}
       className='footerContainer'>
-        <motion.div variants={animations.footerChildrenContainer} className='nav'>
-          <div onClick={proj}>Projects</div>
-          <div onClick={abo}>About</div>
+        <motion.div variants={animations.footerChildrenContainer} className='footerNav'>
+          <div onClick={homeClickHandler}>Home</div>
+          <div onClick={projectClickHandler}>Projects</div>
+          <div onClick={aboutClickHandler}>About</div>
 
         </motion.div>
       <motion.div  variants={animations.footerChildrenContainer}
@@ -57,14 +70,18 @@ function Footer() {
       </motion.div>
       <motion.div variants={animations.footerChildrenContainer}
         className='footerCreator'>
-        <p>@ValentinRusoiu 2023</p>
-        <a href="https://bepuro.com/"> inspiration for this website</a>
+        <p>@ValentinRusoiu2023</p>
+        {/* <a href="https://bepuro.com/"> inspiration for this website</a> */}
       </motion.div>
+    
       <motion.div   variants={animations.footerChildrenContainer}
         className='footerLinkContainer'>
         <a href='https://github.com/MarianRusoiu99' target="_blank" rel="noreferrer"><h2 className='linkItem'>GitHub</h2></a>
         <a href='https://www.linkedin.com/in/valentin-rusoiu-153920197/' target="_blank" rel="noreferrer"><h2 className='linkItem'>Linkedin</h2></a>
         <a href="https://www.instagram.com/valentinrusoiu/" target="_blank" rel="noreferrer"> <h2 className='linkItem'>Instagram</h2></a>
+      </motion.div>
+      <motion.div variants={animations.footerChildrenContainer} className='footerCarousell'>
+      <Carousell key={nanoid()} args={['React','Three.js' ,'react-three-fiber','drei', 'react-router' , "Worddpress", "Webflow","Photoshop","" ]}/>
       </motion.div>
       <motion.div className='footerLetsTalk' variants={animations.footerChildrenContainer}
 

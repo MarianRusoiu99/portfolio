@@ -3,7 +3,7 @@
     padding: 60px 0;
     white-space: nowrap;
     /* position: absolute; */
-    margin-top: -260px;
+    margin-top: -280px;
     z-index:2;
     position: relative;
 }
@@ -13,7 +13,7 @@
     
 }
 .slideElement{
-    padding: 20px;
+    padding: 10px;
     font-size: 40px;
     
 }

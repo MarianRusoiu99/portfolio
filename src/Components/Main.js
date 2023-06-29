@@ -27,7 +27,12 @@ function Main() {
 
  
     <Available/>
+    <motion.div  variants={animations.carouselName}
+            initial="hidden"
+            animate="visible"
+            className="carousellContainer">
     <Carousell key={nanoid()} args={['React','Three.js' ,'react-three-fiber','drei', 'react-router' , "Worddpress", "Webflow","Photoshop","" ]}/>
+    </motion.div>
     </Curtains>
  
     {/* <Hero/> */}

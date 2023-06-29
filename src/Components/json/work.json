@@ -6,14 +6,16 @@
     "image":"./Assets/media/andreeaPortofolio.png",
     "imageAlt":"Andreea Cojocaru Product Designer Portfolio",
     "github":"https://github.com/MarianRusoiu99/andreea",
-    "demo":"http://andreeaportfolio.valentinrusoiu.xyz"},
+    "demo":"http://andreeaportfolio.valentinrusoiu.xyz",
+    "year":"2023"},
 "2" : {
     "title":"Plane Music Visualiser",
     "content":"This is a music visualiser I built while learning three fiber js. Just upload a mp3 with a song that you like.",
     "image":"./Assets/media/PlaneVizualiser.png",
     "imageAlt":"Plane Music Visualiser Rusoiu Valentin",
     "github":"https://github.com/MarianRusoiu99/r3faudio",
-    "demo":"http://musicvisualizerplane.valentinrusoiu.xyz"
+    "demo":"http://musicvisualizerplane.valentinrusoiu.xyz",
+    "year":"2022"
 },
 "3" : {
     "title":"Weather around the globe",
@@ -21,7 +23,8 @@
     "image":"./Assets/media/PlaneVizualiser.png",
     "imageAlt":"descriere",
     "github":"https://github.com/MarianRusoiu99/weather-map",
-    "demo":"http://weatherglobe.valentinrusoiu.xyz"
+    "demo":"http://weatherglobe.valentinrusoiu.xyz",
+    "year":"2022"
 },
 "4" : {
     "title":"Curl Noise Music Visualizer",
@@ -29,7 +32,8 @@
     "image":"./Assets/media/PlaneVizualiser.png",
     "imageAlt":"descriere",
     "github":"https://github.com/MarianRusoiu99/curl_noise",
-    "demo":"http://curlnoisemusicvisualizer.valentinrusoiu.xyz"
+    "demo":"http://curlnoisemusicvisualizer.valentinrusoiu.xyz",
+    "year":"2022"
 
 }
 }

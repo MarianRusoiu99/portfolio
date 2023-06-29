@@ -27,7 +27,7 @@ const isInView = useInView(container, { once: false })
              
                 return(
                     <motion.div variants={animations.footerChildrenContainer}> 
-                    <Element key={key} title={w[`${element}`].title} demo = {w[`${element}`].demo} github={w[`${element}`].github} descriere={w[`${element}`].content} image={w[`${element}`].image} alt={ w[`${element}`].imageAlt} />
+                    <Element key={key} title={w[`${element}`].title} demo = {w[`${element}`].demo} github={w[`${element}`].github} descriere={w[`${element}`].content} image={w[`${element}`].image} alt={ w[`${element}`].imageAlt} year={ w[`${element}`].year} />
                     </motion.div>
                 )
             })

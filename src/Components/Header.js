@@ -9,7 +9,7 @@ function Header() {
       variants={animations.headerName}
       initial="hidden"
       animate="visible"
-      className='name'> 	&#166; Rusoiu Vanlentin &#166; </motion.h1>
+      className='name'>Rusoiu Vanlentin </motion.h1>
       <Menu/>
     </div>
   )

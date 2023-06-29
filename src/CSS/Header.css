@@ -24,15 +24,16 @@
   font-size: 20px;
   top: 0;
   right: 0;
-  /* margin-right: 100px; */
+  margin-right: 50px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 25px;
+  margin-top: 35px;
+  transform: scale(1.2)
   
 }
 .name{
-  margin: 10px!important;
+  margin: 20px!important;
 }
 
 .menuOverlay {
@@ -50,14 +51,19 @@ color: var(--background);
 .footerContacts {
   grid-area: contacts;
   margin-left: 50px;
+  margin-top:30px;
+  margin-bottom: 10px;
+  padding:0px 10px;
 }
 .footerCreator {
+  padding:0px 10px;
   grid-area: creator;
   margin-left: 50px;
 }
 .footerLinkContainer {
   grid-area: linkcontainer;
   margin-right: 100px;
+  align-self: end;
 }
 .linkItem {
 }
@@ -69,8 +75,18 @@ color: var(--background);
   justify-self: center;
   align-self: end;
   font-weight:700;
+  line-height: 1;
 }
-
+.footerNav{
+  grid-area: nav;
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  margin-top: 25px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 .footerContainer {
  position: relative;
  bottom: 0;
@@ -80,19 +96,43 @@ color: var(--background);
 
   display: grid;
   grid-template-areas:
+   "nav . linkcontainer"
     "contacts . linkcontainer"
     "creator . linkcontainer"
+    "carousell carousell carousell"
     "lt lt lt";
   align-items: center;
 }
+.footerCarousell{
+  width: 100%;
+  overflow: hidden;
+   grid-area: carousell;
+   height: 100px;
+   
+}
 
 @media only screen and (max-width: 600px) {
+  .footerCarousell{
+    display: none;
+    width: 100%;
+    overflow: hidden;
+     grid-area: carousell;
+     margin: -50px 0 ;
+  }
+  
 
   .menuHamburger{
-    margin-right: -25px;
+    margin-top: 35px;
+    margin-right: 25px;
+  }
+  .footerNav{
+    margin:0;
+    margin-top: 55px;
   }
   .footerContainer {
+    height: auto;
     grid-template-areas:
+      "nav"
       "contacts"
       "linkcontainer"
       "creator"
@@ -100,17 +140,20 @@ color: var(--background);
     align-items: center;
   }
   .footerLinkContainer {
-    margin-left: 80px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
   }
   .footerLetsTalk {
    
-    font-size: 29vw;
+    font-size: 27vw;
     text-align: center;
   }
 
   .footerContacts {
     margin: 0;
-    margin-top:15px;
+    
     width: 100%;
     font-size: 15px;
     text-align: center;
@@ -121,4 +164,22 @@ color: var(--background);
   }
 }
 
+@media only screen and (max-width: 1000px) {
+.footerCarousell{
+  margin-bottom: -100px;
+  margin-top: -50px;
+}
+}
 
+@media only screen and (max-width: 400px) {
+
+  .footerLinkContainer{
+    margin-top: -40px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footerNav{
+    margin:0;
+    margin-top: 65px;
+  }
+}

@@ -51,11 +51,8 @@ function Carousell(props) {
         //     </div>
         // </motion.div>
 
-        <motion.div
-            variants={animations.carouselName}
-            initial="hidden"
-            animate="visible"
-            className="carousellContainer">
+        <div>
+
             <Splide
                 options={{
                     type: 'loop',
@@ -86,7 +83,7 @@ function Carousell(props) {
                     })
                 }
             </Splide>
-        </motion.div>
+        </div>
     )
 }
 
