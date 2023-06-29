@@ -4,7 +4,8 @@
     white-space: nowrap;
     /* position: absolute; */
     margin-top: -260px;
-
+    z-index:2;
+    position: relative;
 }
 .slide{
     display: flex;

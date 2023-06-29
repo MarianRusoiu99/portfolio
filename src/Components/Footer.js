@@ -15,11 +15,12 @@ function Footer() {
 
 
   const [project , setProject] = React.useState()
-  
+  const [about , setAbout] = React.useState()
 
   
   React.useEffect(()=>{
     setProject( document.querySelector('.worksContainer') )
+    setAbout( document.querySelector('.aboutContainer') )
     console.log(project);
 
     
@@ -32,12 +33,21 @@ function Footer() {
     project.scrollIntoView()
    }
 
+   const abo= () => {
+    if(menuState){
+      setMenuState(menuState)
+    }
+    about.scrollIntoView()
+   }
+
+
   return (
 
     <motion.div  variants={animations.footerContainer} initial="hidden" animate={isInView ? "visible" : "hidden"} exit="exit" ref={container}
       className='footerContainer'>
         <motion.div variants={animations.footerChildrenContainer} className='nav'>
-          <button onClick={proj}>Projects</button>
+          <div onClick={proj}>Projects</div>
+          <div onClick={abo}>About</div>
 
         </motion.div>
       <motion.div  variants={animations.footerChildrenContainer}

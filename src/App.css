@@ -9,3 +9,8 @@
     text-align: center;
     margin: 0 auto;
   }
+  .splide__slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

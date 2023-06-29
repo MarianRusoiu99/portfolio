@@ -20,6 +20,7 @@ const isInView = useInView(container, { once: false })
     initial="hidden"
     animate={isInView ? "visible" : "hidden"}
     className='worksContainer'>
+        <div style={{borderBottom:"2px solid"}}>
         <motion.h2 variants={animations.footerChildrenContainer} className='sectionText'>Projects</motion.h2>
         {
             Object.keys(w).map((element,key)=> {
@@ -31,6 +32,7 @@ const isInView = useInView(container, { once: false })
                 )
             })
         }
+        </div>
     </motion.div>
 
 </>
