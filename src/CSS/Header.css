@@ -64,10 +64,15 @@ color: var(--background);
   grid-area: linkcontainer;
   margin-right: 100px;
   align-self: end;
+  color: var(--dominant);
 }
-.linkItem {
+.linkItem{
+  color: var(--dominant)!important;
+  font-weight: 700;
 }
-
+ a {
+    color: inherit !important;
+}
 .footerLetsTalk {
   font-family: 'Kelly Slab', cursive;
   grid-area: lt;
@@ -76,6 +81,8 @@ color: var(--background);
   align-self: end;
   font-weight:700;
   line-height: 1;
+
+  
 }
 .footerNav{
   grid-area: nav;

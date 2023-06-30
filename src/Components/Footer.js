@@ -58,15 +58,15 @@ function Footer() {
     <motion.div  variants={animations.footerContainer} initial="hidden" animate={isInView ? "visible" : "hidden"} exit="exit" ref={container}
       className='footerContainer'>
         <motion.div variants={animations.footerChildrenContainer} className='footerNav'>
-          <div onClick={homeClickHandler}>Home</div>
-          <div onClick={projectClickHandler}>Projects</div>
-          <div onClick={aboutClickHandler}>About</div>
+          <div className='cursorAction' onClick={homeClickHandler}>Home</div>
+          <div  className='cursorAction' onClick={projectClickHandler}>Projects</div>
+          <div className='cursorAction' onClick={aboutClickHandler}>About</div>
 
         </motion.div>
       <motion.div  variants={animations.footerChildrenContainer}
         className='footerContacts'>
-        <h2>valentin.rusoiu@gmail.com</h2>
-        <h2>+40 773356485</h2>
+        <h2><a href="mailto:valentin.rusoiu@gmail.com" >valentin.rusoiu@gmail.com</a></h2>
+        <h2><a href="tel:+40773356485" >+40 773356485</a></h2>
       </motion.div>
       <motion.div variants={animations.footerChildrenContainer}
         className='footerCreator'>
@@ -86,7 +86,7 @@ function Footer() {
       <motion.div className='footerLetsTalk' variants={animations.footerChildrenContainer}
 
       >
-        LET'S TALK
+      <a  href="mailto:valentin.rusoiu@gmail.com">LET'S TALK</a>
       </motion.div>
     </motion.div>
 

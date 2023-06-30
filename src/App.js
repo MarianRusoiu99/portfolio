@@ -24,10 +24,10 @@ function App() {
     <div className="App">
        <AnimatedCursor 
       color="230, 230, 230"  
-    innerSize={25}
-    outerSize={35}
+    innerSize={15}
+    outerSize={25}
     innerScale={2}
-    outerScale={2.7}
+    outerScale={2.0}
     outerAlpha={1}
     innerStyle={
       {
@@ -38,6 +38,16 @@ function App() {
       mixBlendMode: 'difference'
     
     }}
+    clickables={[
+      'a',
+      '.title',
+      'svg',
+      '.cursorAction',
+      'select',
+      'textarea',
+      'button',
+      '.link'
+    ]}
        />
       <BrowserRouter>
       <Header/>

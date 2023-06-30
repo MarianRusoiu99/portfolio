@@ -15,16 +15,14 @@ function Available() {
   // },[])
 
   return (
-    <motion.div
-      initial={{ scale: 0 }}
-      animate={{ scale: 1 }}
-      transition={{
-        duration: 1,
-        delay: 1.5,
-        type: "spring"
-      }}
-      className='circle'>
-
+    <motion.a  href="mailto:valentin.rusoiu@gmail.com" initial={{ scale: 0 }}
+    animate={{ scale: 1 }}
+    transition={{
+      duration: 1,
+      delay: 1.5,
+      type: "spring"
+    }}
+    className='circle'>
       <motion.div
 
         animate={{ opacity: [0, 1, 0] }}
@@ -46,7 +44,8 @@ function Available() {
 
       } </p>
 
-    </motion.div>
+  
+    </motion.a>
   )
 }
 

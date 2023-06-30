@@ -134,7 +134,9 @@ function SimplePlane(source) {
   const onAfterResize = (plane) => {
     setResolution(plane);
   };
- 
+
+  const windowSize = useRef(window.innerWidth).current;
+ console.log(windowSize)
   return (
     
     <Plane
@@ -151,7 +153,7 @@ function SimplePlane(source) {
       onAfterResize={onAfterResize}
     >
       <img
-        src="./Assets/b.png"
+        src={(windowSize > 600) ? "./Assets/b.png": "./Assets/c.png"}
         data-sampler="simplePlaneTexture"
         alt=""
       />
