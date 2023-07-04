@@ -33,7 +33,8 @@ document.querySelector(".descriere").textContent.replace(/"([^"]+(?="))"/g, '$1'
             animate={isShown ? "visible": "hidden"}
             exit="exit"
           className="row2">
-            <div className='descriere'>{props.descriere} <img className="image" src={props.image} alt={props.alt} /> </div>
+            <div className='descriere'>{props.descriere} </div>
+            <img className="image" src={props.image} alt={props.alt} />
             
           </motion.div>
         

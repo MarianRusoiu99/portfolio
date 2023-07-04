@@ -3,7 +3,7 @@
 
     "title":"Andreea Cojocaru Portfolio",
     "content":"The project is a visually captivating portfolio website created for Andreea Cojocaru, a passionate and dedicated product designer. \n \n The portfolio showcases Andreea's skills, creativity, and expertise in the field of product design.\n \n The portfolio website is designed to provide visitors with an immersive and engaging experience, allowing them to explore Andreea's diverse range of projects and design concepts. The use of React and React Three Fiber enables the integration of interactive 3D elements and animations, enhancing the overall visual appeal and interactivity of the portfolio. ",
-    "image":"./Assets/media/andreeaPortofolio.png",
+    "image":"./Assets/media/andreea.png",
     "imageAlt":"Andreea Cojocaru Product Designer Portfolio",
     "github":"https://github.com/MarianRusoiu99/andreea",
     "demo":"http://andreeaportfolio.valentinrusoiu.xyz",
@@ -20,8 +20,8 @@
 "3" : {
     "title":"Weather around the globe",
     "content":"The project is an immersive and interactive weather application developed in React, featuring a 3D globe that users can pan and rotate to explore the world. This application seamlessly integrates with a weather API, providing real-time weather information from the capital city of any selected country on the globe.",
-    "image":"./Assets/media/PlaneVizualiser.png",
-    "imageAlt":"descriere",
+    "image":"./Assets/media/globe.png",
+    "imageAlt":"Weather around the globe Rusoiu Valentin",
     "github":"https://github.com/MarianRusoiu99/weather-map",
     "demo":"http://weatherglobe.valentinrusoiu.xyz",
     "year":"2022"
@@ -29,8 +29,8 @@
 "4" : {
     "title":"Curl Noise Music Visualizer",
     "content":"The project is an immersive music visualizer built in React that incorporates a unique and visually stunning particle effect using curl noise. This dynamic application provides users with a captivating audio-visual experience, where particles react and respond to the music's rhythm and audio elements. \n \n Upon launching the application, users are presented with an interface that prompts them to click the play button to start the music and initiate the visualizer. As the play button is clicked, the application begins to load the necessary resources, including the particle effect rendering. Due to the complexity of the particle effect, a brief loading time is required before the music and visuals commence. \n \n Once loaded, the music visualizer springs to life, transforming the audio data into a mesmerizing display of swirling particles that react in real-time to the music.",
-    "image":"./Assets/media/PlaneVizualiser.png",
-    "imageAlt":"descriere",
+    "image":"./Assets/media/curl.png",
+    "imageAlt":"Curl Noise Music Visualizer Valentin Rusoiu",
     "github":"https://github.com/MarianRusoiu99/curl_noise",
     "demo":"http://curlnoisemusicvisualizer.valentinrusoiu.xyz",
     "year":"2022"
