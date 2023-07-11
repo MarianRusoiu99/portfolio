@@ -1,43 +1,43 @@
 import React from 'react'
 
-import {motion , AnimatePresence} from 'framer-motion'
- import {animations} from "./json/animations.js"
+import { motion, AnimatePresence } from 'framer-motion'
+import { animations } from "./json/animations.js"
 import { nanoid } from 'nanoid';
 function Element(props) {
   const [isShown, setIsShown] = React.useState(false);
 
 
-React.useEffect(()=>{
-document.querySelector(".descriere").textContent.replace(/"([^"]+(?="))"/g, '$1')
-},[])
+  React.useEffect(() => {
+    document.querySelector(".descriere").textContent.replace(/"([^"]+(?="))"/g, '$1')
+  }, [])
 
   return (
-    <motion.div onTap={() => {setIsShown((prev)=>!prev)}} >
-      
-      <motion.div 
-     
-       
-      className='worksElement' key={props.key} >
-        
+    <motion.div onTap={() => { setIsShown((prev) => !prev) }} >
+
+      <motion.div
+
+
+        className='worksElement' key={props.key} >
+
         <div className="row1">
           <h3 className="title">{props.title}</h3>
           <div className='links'> <a href={props.demo} target="_blank" rel="noreferrer" className='linkItem'>DEMO</a><a href={props.github} target="_blank" rel="noreferrer" className='linkItem'>GITHUB</a>  <div className="year">{props.year}</div></div>
-         
+
         </div>
         <AnimatePresence>
-        
-          <motion.div 
+
+          <motion.div
             key={nanoid()}
             variants={animations.elementVariants}
-             initial="hidden"
-            animate={isShown ? "visible": "hidden"}
+            initial="hidden"
+            animate={isShown ? "visible" : "hidden"}
             exit="exit"
-          className="row2">
+            className="row2">
             <div className='descriere'>{props.descriere} </div>
             <img className="image" src={props.image} alt={props.alt} />
-            
+
           </motion.div>
-        
+
         </AnimatePresence>
       </motion.div></motion.div>
   )

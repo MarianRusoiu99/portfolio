@@ -14,37 +14,38 @@ import { animations } from './json/animations'
 
 function Main() {
   return (
-    <div> 
-      <motion.div className="overL" initial={{opacity:1}} animate={{opacity:0}} transition={{
-      duration: 2,
-      delay:0.5
-        }}>
-</motion.div>  
+    <div>
+      <motion.div className="overL" initial={{ opacity: 1 }} animate={{ opacity: 0 }} transition={{
+        duration: 2,
+        delay: 0.5
+      }}>
+      </motion.div>
       <Curtains pixelRatio={Math.min(1.5, window.devicePixelRatio)}>
 
-  
-        <SimplePlane source={image}/>
 
- 
-    <Available/>
-    <motion.div  variants={animations.carouselName}
-            initial="hidden"
-            animate="visible"
-            className="carousellContainer">
-    <Carousell key={nanoid()} args={['React','Three.js' ,'react-three/fiber','drei', "Wordpress", "Webflow","Photoshop","framer-motion" ]}/>
-    </motion.div>
-    </Curtains>
- 
-    {/* <Hero/> */}
-    {/* <Carousell key={nanoid()} args={['React','Three.js' ,'react-three-fiber','drei', 'react-router' , "Worddpress", "Webflow","Photoshop","" ]}/> */}
-    <Work/>
-    <About/>
-   
-   
-   
+        <SimplePlane source={image} />
 
-    {/* <Background/> */}
-   
+
+        <Available />
+        <motion.div variants={animations.carouselName}
+          initial="hidden"
+          animate="visible"
+          className="carousellContainer">
+          <Carousell key={nanoid()} args={['React', 'Three.js', 'react-three-fiber', "Worddpress", "Webflow", "Photoshop", "Performance Optimisation"]} />
+
+        </motion.div>
+      </Curtains>
+
+      {/* <Hero/> */}
+      {/* <Carousell key={nanoid()} args={['React','Three.js' ,'react-three-fiber','drei', 'react-router' , "Worddpress", "Webflow","Photoshop","" ]}/> */}
+      <Work />
+      <About />
+
+
+
+
+      {/* <Background/> */}
+
     </div>
   )
 }
