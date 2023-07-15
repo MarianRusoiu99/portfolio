@@ -81,7 +81,7 @@ function Footer() {
         <a href="https://www.instagram.com/valentinrusoiu/" target="_blank" rel="noreferrer"> <h2 className='linkItem'>Instagram</h2></a>
       </motion.div>
       <motion.div variants={animations.footerChildrenContainer} className='footerCarousell'>
-        <Carousell key={nanoid()} args={['React', 'Three.js', 'react-three-fiber', "Worddpress", "Webflow", "Photoshop", "Performance Optimisation"]} />
+        <Carousell key={nanoid()} args={['React', 'Three.js', 'react-three-fiber', "Wordpress", "Webflow", "Photoshop", "Performance Optimisation"]} />
       </motion.div>
       <motion.div className='footerLetsTalk' variants={animations.footerChildrenContainer}
 

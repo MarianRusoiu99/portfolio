@@ -31,7 +31,7 @@ function Main() {
           initial="hidden"
           animate="visible"
           className="carousellContainer">
-          <Carousell key={nanoid()} args={['React', 'Three.js', 'react-three-fiber', "Worddpress", "Webflow", "Photoshop", "Performance Optimisation"]} />
+          <Carousell key={nanoid()} args={['React', 'Three.js', 'react-three-fiber', "Wordpress", "Webflow", "Photoshop", "Performance Optimisation"]} />
 
         </motion.div>
       </Curtains>

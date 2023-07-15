@@ -33,8 +33,9 @@ function Element(props) {
             animate={isShown ? "visible" : "hidden"}
             exit="exit"
             className="row2">
-            <div className='descriere'>{props.descriere} </div>
             <img className="image" src={props.image} alt={props.alt} />
+            <div className='descriere'>{props.descriere} </div>
+           
 
           </motion.div>
 
